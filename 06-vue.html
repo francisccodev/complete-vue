@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Vue.js Loops</title>
+	
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" type="text/javascript"></script>
+	
+</head>
+<body>
+	<div id="app">		
+		<h1> {{ name }} </h1>
+		<div v-on:click="updateName1">
+			Click me!!
+		</div>
+		<div v-on:dblclick="updateName2">
+			Double click me!!
+		</div>
+		<div class="box" v-on:mousemove="getCoordinates">
+			hover me
+		</div>
+		<p>x: {{ x }}</p>
+		<p>y: {{ y }}</p>
+	</div>
+</body>
+</html>
+
+<script src="06-main.js" type="text/javascript"></script>
+
+<style>
+	.box {
+		background: red;
+		width: 200px;
+		height: 200px;
+	}
+</style>

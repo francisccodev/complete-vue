@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Vue.js Loops</title>
+			<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" type="text/javascript"></script>
+	
+</head>
+<body>
+	<div id="app">
+		
+		<p v-for="name in names">
+			{{ name }}
+		</p>
+		
+		<p v-for="(name,index) in names">
+			{{ name }}, {{ index }}
+		</p>
+		<ul>
+			<li v-for="name in names">
+				{{ name }}
+			</li>
+		</ul>
+			
+		<ul>
+			<li v-for="(car,index) in cars">
+				{{ index }} {{ car.brand }} is {{ car.color }}
+			</li>
+		</ul>
+		<ul>
+			<li v-for="(value,key,index) in user">
+				{{ index }} - {{ key }} : {{ value }}
+			</li>
+			<ul>
+	</div>
+	
+	<script src="04-main.js" type="text/javascript"></script>
+</body>
+</html>

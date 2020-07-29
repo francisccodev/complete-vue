@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Vue.js Conditional Directives</title>
+			<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" type="text/javascript"></script>
+	
+</head>
+<body>
+	<div id="app">
+		<p v-if="userAge > allowedAge">
+				You are good to go
+		</p>
+		<p v-else-if="userAge === allowedAge">
+				Let me think about it...
+			</p>
+		<p v-else>
+				You are not allowed!
+		</p>
+		
+		<p v-if="checkUser()">
+			show it {{ user }}
+		</p>
+		<p v-else>
+			You are not allowed!!!
+		</p>
+	</div>
+	
+	<script src="02-main.js" type="text/javascript"></script>
+</body>
+</html>
